@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="252.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddController">
+   <children>
+      <TextField fx:id="word_target" layoutX="168.0" layoutY="49.0" prefHeight="31.0" prefWidth="235.0" />
+      <TextField fx:id="word_explain" layoutX="168.0" layoutY="126.0" prefHeight="31.0" prefWidth="235.0" />
+      <Button fx:id="buttonCancel" layoutX="338.0" layoutY="188.0" mnemonicParsing="false" onAction="#setButtonCancel_click" text="Cancel" />
+      <Label layoutX="52.0" layoutY="49.0" prefHeight="31.0" prefWidth="103.0" text="English" />
+      <Label layoutX="52.0" layoutY="126.0" prefHeight="31.0" prefWidth="103.0" text="Vietnamese" />
+      <Button fx:id="buttonOk" layoutX="253.0" layoutY="188.0" mnemonicParsing="false" onAction="#buttonOk_click" text="Ok" />
+   </children>
+</AnchorPane>

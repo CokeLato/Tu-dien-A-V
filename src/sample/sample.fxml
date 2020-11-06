@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0"
+			prefWidth="679.0" style="-fx-background-color: #2a3b4c;" xmlns="http://javafx.com/javafx/8"
+			xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+	<children>
+		<TextField fx:id="word_target" layoutX="14.0" layoutY="41.0" onKeyReleased="#autoSearch" prefHeight="42.0"
+				   prefWidth="212.0"/>
+		<Button id="Search" fx:id="buttonSearch" layoutX="244.0" layoutY="42.0" mnemonicParsing="false"
+				onAction="#buttonSearch_click" prefHeight="41.0" prefWidth="111.0" text="tìm kiếm">
+		</Button>
+		<TextArea fx:id="word_explain" layoutX="244.0" layoutY="96.0" prefHeight="434.0" prefWidth="427.0"/>
+		<ListView fx:id="listView" layoutX="14.0" layoutY="96.0" onMouseClicked="#listView_click" prefHeight="434.0"
+				  prefWidth="212.0"/>
+		<Button id="Add" fx:id="addWord" layoutX="244.0" layoutY="539.0" mnemonicParsing="false"
+				onAction="#buttonAdd_click" prefHeight="38.0" prefWidth="86.0" text="thêm">
+		</Button>
+		<Button id="Delete" fx:id="deleteWord" layoutX="420.0" layoutY="539.0" mnemonicParsing="false"
+				onAction="#buttondelete_click" prefHeight="38.0" prefWidth="86.0" text="xóa">
+		</Button>
+		<Button id="Correct" fx:id="changeWord" layoutX="579.0" layoutY="539.0" mnemonicParsing="false"
+				onAction="#buttonchange_click" prefHeight="38.0" prefWidth="86.0" text="sửa">
+		</Button>
+	</children>
+</AnchorPane>
